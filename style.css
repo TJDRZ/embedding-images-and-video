@@ -1,4 +1,5 @@
 body {
+    width: 95%;
     margin: 0.5rem 1rem;
     display: flex;
     flex-direction: column;
@@ -250,4 +251,27 @@ aside {
 
 .right-side-video> * {
     margin: 0.2rem;
+}
+
+@media (max-width: 960px) {
+    :root {
+        font-size: 12px;
+    }
+
+    .sticky-header>span {
+        display: none;
+    }
+
+    .content {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    iframe {
+        width: 98vw;
+    }
+
+    .subscribe {
+        flex-basis: 50%;
+    }
 }
